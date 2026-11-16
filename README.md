@@ -117,7 +117,7 @@ A labelled figure with no caption text still gets one,
 after its "Figure N" label.
 
 Tables, listings and custom float kinds (such as a `vid-` video float
-declared under `crossref: custom:`) get the same caption anchor,
+declared under `crossref: custom:`, which needs Quarto 1.4 or later) get the same caption anchor,
 because Quarto renders every cross-reference float the same way.
 
 ## Acknowledgements
