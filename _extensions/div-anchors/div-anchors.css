@@ -37,9 +37,13 @@
 }
 
 /* A figure's anchor follows its own caption and shows while the figure
- * is hovered. A subfigure sits inside its group, so hovering a subfigure
- * shows the group's anchor as well as its own. The second rule covers a
- * revealjs figure, an <img> followed by <p class="caption">. */
+ * is hovered. "Figure" means any cross-reference float (figure, table,
+ * listing, or a custom kind such as a video); div-anchors.js marks each
+ * one it anchors with .has-div-anchor. A subfigure sits inside its group,
+ * so hovering a subfigure shows the group's anchor as well as its own.
+ * The third rule covers a revealjs figure, an <img> followed by
+ * <p class="caption">. */
+.has-div-anchor:hover > figure > figcaption > .div-anchor-figure,
 [id^="fig-"]:hover > figure > figcaption > .div-anchor-figure,
 img[id^="fig-"]:hover + p.caption > .div-anchor-figure,
 p.caption:hover > .div-anchor-figure {

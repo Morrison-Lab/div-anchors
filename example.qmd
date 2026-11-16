@@ -79,6 +79,18 @@ A single figure.
 A subfigure group.
 :::
 
+## Tables
+
+Hover over @tbl-primes to see the anchor after its caption.
+
+| $n$ | $n$th prime |
+|----:|------------:|
+| 1   | 2           |
+| 2   | 3           |
+| 3   | 5           |
+
+: The first three primes. {#tbl-primes}
+
 ## Proof (without anchor, unnumbered)
 
 ::: {.proof}
