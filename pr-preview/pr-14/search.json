@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "div-anchors",
-    "section": "",
-    "text": "div-anchors is a Quarto extension that adds visual URL anchor links to theorem and proof divs for HTML output, similarly to the built-in anchor-sections option for section headings.\n\n\nquarto add d-morrison/div-anchors\n\n\n\nAdd the extension to your document’s front matter:\nfilters:\n  - d-morrison/div-anchors\nOr add it to _quarto.yml to apply it to every document in a project:\nfilters:\n  - d-morrison/div-anchors\n\n\n\nSee the Div Anchors Extension Demo for a live demonstration of all supported theorem types.\n\n\n\nSource code is available at https://github.com/d-morrison/div-anchors."
-  },
-  {
-    "objectID": "index.html#installation",
-    "href": "index.html#installation",
-    "title": "div-anchors",
-    "section": "",
-    "text": "quarto add d-morrison/div-anchors"
-  },
-  {
-    "objectID": "index.html#usage",
-    "href": "index.html#usage",
-    "title": "div-anchors",
-    "section": "",
-    "text": "Add the extension to your document’s front matter:\nfilters:\n  - d-morrison/div-anchors\nOr add it to _quarto.yml to apply it to every document in a project:\nfilters:\n  - d-morrison/div-anchors"
-  },
-  {
-    "objectID": "index.html#demo",
-    "href": "index.html#demo",
-    "title": "div-anchors",
-    "section": "",
-    "text": "See the Div Anchors Extension Demo for a live demonstration of all supported theorem types."
-  },
-  {
-    "objectID": "index.html#source",
-    "href": "index.html#source",
-    "title": "div-anchors",
-    "section": "",
-    "text": "Source code is available at https://github.com/d-morrison/div-anchors."
-  },
-  {
     "objectID": "example.html",
     "href": "example.html",
     "title": "Div Anchors Extension Demo",
@@ -89,5 +54,40 @@
     "title": "Div Anchors Extension Demo",
     "section": "7 Proof (without anchor, unnumbered)",
     "text": "7 Proof (without anchor, unnumbered)\n\nProof. Let \\(a\\) and \\(b\\) be the legs of a right triangle and \\(c\\) the hypotenuse. Arrange four copies of the triangle around a square with side \\(c\\). The outer shape is a square with side \\(a + b\\), so \\((a + b)^2 = c^2 + 4 \\cdot \\tfrac{1}{2}ab\\), which simplifies to \\(a^2 + b^2 = c^2\\)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "div-anchors",
+    "section": "",
+    "text": "div-anchors is a Quarto extension that adds visual URL anchor links to theorem and proof divs for HTML output, similarly to the built-in anchor-sections option for section headings.\n\n\nquarto add d-morrison/div-anchors\n\n\n\nAdd the extension to your document’s front matter:\nfilters:\n  - d-morrison/div-anchors\nOr add it to _quarto.yml to apply it to every document in a project:\nfilters:\n  - d-morrison/div-anchors\n\n\n\nSee the Div Anchors Extension Demo for a live demonstration of all supported theorem types.\n\n\n\nSource code is available at https://github.com/d-morrison/div-anchors."
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "div-anchors",
+    "section": "",
+    "text": "quarto add d-morrison/div-anchors"
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "div-anchors",
+    "section": "",
+    "text": "Add the extension to your document’s front matter:\nfilters:\n  - d-morrison/div-anchors\nOr add it to _quarto.yml to apply it to every document in a project:\nfilters:\n  - d-morrison/div-anchors"
+  },
+  {
+    "objectID": "index.html#demo",
+    "href": "index.html#demo",
+    "title": "div-anchors",
+    "section": "",
+    "text": "See the Div Anchors Extension Demo for a live demonstration of all supported theorem types."
+  },
+  {
+    "objectID": "index.html#source",
+    "href": "index.html#source",
+    "title": "div-anchors",
+    "section": "",
+    "text": "Source code is available at https://github.com/d-morrison/div-anchors."
   }
 ]
