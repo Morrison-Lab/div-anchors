@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -150,7 +185,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content" tabindex="-1">
 <div class="preview-combined-banner">
     <p style="margin: 0;">
-        <strong>📝 Preview Changes:</strong> This page has been modified in this pull request (~8% of content changed).
+        <strong>📝 Preview Changes:</strong> This page has been modified in this pull request (~18% of content changed).
         <br>
         <strong>🎨 Highlighting Legend:</strong> 
         <mark class="preview-text-changed" style="display: inline; padding: 1px 3px;">Modified text (yellow)</mark> shows changed words/phrases with tooltips of original text, 
@@ -298,8 +333,23 @@ Table&nbsp;1: The first three primes.
 </figure>
 </div>
 </section>
-<section id="proof-without-anchor-unnumbered" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="proof-without-anchor-unnumbered"><span class="header-section-number"><mark class="preview-text-changed">7</mark></span> Proof (without anchor, unnumbered)</h2>
+<section id="listings" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="listings"><mark class="preview-element-added"><span class="header-section-number">7</span> Listings</mark></h2>
+<p><mark class="preview-element-added">Hover over <a href="#lst-primes" class="quarto-xref">Listing&nbsp;1</a> to see the anchor after its caption.</mark></p>
+<div id="lst-primes" class="python listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-primes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;1: A function that tests whether a number is prime.
+</figcaption>
+<div aria-describedby="lst-primes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><mark class="preview-element-added"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_prime(n):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n <span class="op">&gt;</span> <span class="dv">1</span> <span class="kw">and</span> <span class="bu">all</span>(n <span class="op">%</span> d <span class="cf">for</span> d <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, n))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="proof-without-anchor-unnumbered" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="proof-without-anchor-unnumbered"><span class="header-section-number">8</span> Proof (without anchor, unnumbered)</mark></h2>
 <div class="proof">
 <p><span class="proof-title"><em>Proof</em>. </span>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be the legs of a right triangle and <span class="math inline">\(c\)</span> the hypotenuse. Arrange four copies of the triangle around a square with side <span class="math inline">\(c\)</span>. The outer shape is a square with side <span class="math inline">\(a + b\)</span>, so <span class="math inline">\((a + b)^2 = c^2 + 4 \cdot \tfrac{1}{2}ab\)</span>, which simplifies to <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
 </div>

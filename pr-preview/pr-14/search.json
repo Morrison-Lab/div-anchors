@@ -49,11 +49,18 @@
     "text": "6 Tables\nHover over Table 1 to see the anchor after its caption.\n\n\n\nTable 1: The first three primes.\n\n\n\n\n\n\\(n\\)\n\\(n\\)th prime\n\n\n\n\n1\n2\n\n\n2\n3\n\n\n3\n5"
   },
   {
+    "objectID": "example.html#listings",
+    "href": "example.html#listings",
+    "title": "Div Anchors Extension Demo",
+    "section": "7 Listings",
+    "text": "7 Listings\nHover over Listing 1 to see the anchor after its caption.\n\n\n\nListing 1: A function that tests whether a number is prime.\n\n\ndef is_prime(n):\n    return n &gt; 1 and all(n % d for d in range(2, n))"
+  },
+  {
     "objectID": "example.html#proof-without-anchor-unnumbered",
     "href": "example.html#proof-without-anchor-unnumbered",
     "title": "Div Anchors Extension Demo",
-    "section": "7 Proof (without anchor, unnumbered)",
-    "text": "7 Proof (without anchor, unnumbered)\n\nProof. Let \\(a\\) and \\(b\\) be the legs of a right triangle and \\(c\\) the hypotenuse. Arrange four copies of the triangle around a square with side \\(c\\). The outer shape is a square with side \\(a + b\\), so \\((a + b)^2 = c^2 + 4 \\cdot \\tfrac{1}{2}ab\\), which simplifies to \\(a^2 + b^2 = c^2\\)."
+    "section": "8 Proof (without anchor, unnumbered)",
+    "text": "8 Proof (without anchor, unnumbered)\n\nProof. Let \\(a\\) and \\(b\\) be the legs of a right triangle and \\(c\\) the hypotenuse. Arrange four copies of the triangle around a square with side \\(c\\). The outer shape is a square with side \\(a + b\\), so \\((a + b)^2 = c^2 + 4 \\cdot \\tfrac{1}{2}ab\\), which simplifies to \\(a^2 + b^2 = c^2\\)."
   },
   {
     "objectID": "index.html",
