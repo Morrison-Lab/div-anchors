@@ -296,3 +296,13 @@ jobs:
     #   timeout-minutes: 50  # cap the review job; defaults to 60
     #   prompt-addendum: |
     #     Repo-specific review guidance (e.g. Quarto/R conventions to enforce).
+      prompt-addendum: |
+        This repository is a Quarto filter extension, `_extensions/div-anchors/`:
+        a Lua filter that registers `div-anchors.js` and `div-anchors.css` as an
+        HTML dependency, and the script that adds hover permalink anchors to
+        theorem-type divs and cross-reference floats after the page loads.
+        Lab sites vendor it unchanged, so check every change against the
+        rendered HTML of `example.qmd`, not only the diff: that each anchor
+        lands where the README says, that no element gets two anchors, and
+        that the version in `_extension.yml` matches the one in the Lua
+        dependency.
