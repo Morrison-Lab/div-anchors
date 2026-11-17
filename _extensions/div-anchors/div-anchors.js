@@ -154,6 +154,10 @@
   }
 
   function addFigureAnchors() {
+    // `.quarto-float` marks a cross-reference float (Quarto 1.4+), and a
+    // `.quarto-layout-panel` with an id is a subfigure group's parent.
+    // Only a div whose own child is a <figure> holding a <figcaption> gets
+    // an anchor, which leaves out any other layout panel with an id.
     var figs = document.querySelectorAll(
       "div.quarto-float[id], div.quarto-layout-panel[id], div[id^='fig-']"
     );
