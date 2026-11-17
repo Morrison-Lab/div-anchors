@@ -116,6 +116,13 @@ so its caption anchor stays reachable.
 A labelled figure with no caption text still gets one,
 after its "Figure N" label.
 
+With Quarto 1.4 or later, tables, listings and custom float kinds
+(such as a `vid-` video float declared under `crossref: custom:`)
+get the same caption anchor,
+because Quarto renders every cross-reference float the same way.
+Quarto 1.3 renders a table or listing without that markup,
+so there they get no caption anchor.
+
 ## Acknowledgements
 
 This extension was inspired by Quarto's built-in `anchor-sections` feature.

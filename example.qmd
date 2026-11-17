@@ -79,6 +79,27 @@ A single figure.
 A subfigure group.
 :::
 
+## Tables
+
+Hover over @tbl-primes to see the anchor after its caption.
+
+| $n$ | $n$th prime |
+|----:|------------:|
+| 1   | 2           |
+| 2   | 3           |
+| 3   | 5           |
+
+: The first three primes. {#tbl-primes}
+
+## Listings
+
+Hover over @lst-primes to see the anchor after its caption.
+
+```{#lst-primes .python lst-cap="A function that tests whether a number is prime."}
+def is_prime(n):
+    return n > 1 and all(n % d for d in range(2, n))
+```
+
 ## Proof (without anchor, unnumbered)
 
 ::: {.proof}
