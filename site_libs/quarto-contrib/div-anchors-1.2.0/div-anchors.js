@@ -121,6 +121,12 @@
   /**
    * Add an anchor link to the end of each figure's own caption.
    *
+   * "Figure" here means any Quarto cross-reference float: a figure
+   * (`fig-`), a table (`tbl-`), a listing (`lst-`), or a custom float kind
+   * such as a video (`vid-`). Quarto renders each as a `.quarto-float`
+   * div, or a `.quarto-layout-panel` div for a subfloat group, holding a
+   * <figure> with its own <figcaption>, so one selector covers them all.
+   *
    * Quarto's `anchor-sections` skips the parent of a subfigure group
    * (a `.quarto-layout-panel` without the `anchored` class), and puts the
    * link it does add in the figure box's top-right corner, far from a
@@ -148,7 +154,13 @@
   }
 
   function addFigureAnchors() {
-    var figs = document.querySelectorAll("div[id^='fig-']");
+    // `.quarto-float` marks a cross-reference float (Quarto 1.4+), and a
+    // `.quarto-layout-panel` with an id is a subfigure group's parent.
+    // Only a div whose own child is a <figure> holding a <figcaption> gets
+    // an anchor, which leaves out any other layout panel with an id.
+    var figs = document.querySelectorAll(
+      "div.quarto-float[id], div.quarto-layout-panel[id], div[id^='fig-']"
+    );
     figs.forEach(function (fig) {
       // The figure's own caption, not a subfigure's.
       var caption = fig.querySelector(":scope > figure > figcaption");
